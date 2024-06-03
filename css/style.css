@@ -1,0 +1,316 @@
+*{
+    background-color: #1F1F1F !important;
+}
+
+#navbar{
+    max-width: 485px;
+    width: 100%;
+    border-radius: 30px;
+    border: 1px solid #565656;
+    position: fixed;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 50px;
+    z-index: 10;
+}
+.sidebar-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:#fff;
+}
+.sidebar-header a{
+    color:#fff;
+    text-decoration: none;
+    font-size: 30px;
+}
+.user-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    flex-direction: column;
+}
+.user-img img{
+    margin-bottom: 20px;
+}
+.user-img h3{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 400;
+}
+.user-img  p{
+    color: #999;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.main-menu{
+    padding: 20px;
+    
+}
+.main-menu ul{
+    list-style-type:  none;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.main-menu ul li {
+    display: inline; 
+    margin-right: 5px; 
+    padding: 3px; 
+    margin-top: 20px;
+}
+.main-menu li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+
+}
+.main-menu li a:hover{
+    color: #14C5FD;
+}
+/*hero*/
+.hero-section {
+    padding: 68px 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 400px;
+}
+.content-width{
+    max-width: 1130px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+
+.section-header h1{
+    padding-bottom: 40px;
+    font-size: 78px;
+    font-weight: 300;
+    color:#fff;
+}
+.section-header h1 span{
+    color: #14C5FD;
+}
+.hero-content p, .about-content{
+    font-size: 16px;
+    color: #999;
+    margin-bottom: 31px;
+}
+.subtitle{
+    color: #fff;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+/*about*/
+.about-area{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-left: 400px;
+}
+.about-area .about-content p {
+    line-height: 30px;
+    
+}
+.section-header h2 {
+    font-size: 48px;
+    line-height: 60px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 33px;
+}
+.section-header h2 span{
+    color: #14C5FD;
+}
+/*Resume*/
+.resume-area{
+    padding-top: 90px;
+    padding-bottom: 90px;
+
+    height: 100vh;
+    margin-left: 440px;
+}
+.date{
+    color: #999;
+}
+.resume-area .resume-content .resume-timeline .item {
+    position: relative;
+    padding-left: 74px;
+    padding-bottom: 68px;
+}
+.resume-area .resume-content .resume-timeline .item:last-child {
+    padding-bottom: 0;
+}
+.resume-area .resume-content .resume-timeline .item:last-child::after {
+    height: calc(100% - 10px);
+}
+.resume-area .resume-content .resume-timeline .item::after {
+    content: '';
+    background: #333333;
+    width: 1px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    z-index: 1;
+}
+.resume-area .resume-content .resume-timeline .item::before {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: #656565;
+    border-radius: 50%;
+    left: -6px;
+    top: 7px;
+    transition: .3s;
+    z-index: 2;
+}
+.resume-area .resume-content .resume-timeline .item .date {
+    display: block;
+    margin-bottom: 28px;
+    transition: .3s;
+}
+.resume-area .resume-content .resume-timeline .item h3 {
+    font-size: 24px;
+    font-weight: 300;
+    margin-bottom: 5px;
+    color: #fff;
+}
+.resume-area .resume-content .resume-timeline .item h3 a {
+    color: #fff;
+    display: block;
+}
+.resume-area .resume-content .resume-timeline .item p {
+    font-size: 13px;
+    color: #999999;
+    margin-bottom: 18px;
+}
+.resume-area .resume-content .resume-timeline .item p:last-child {
+    margin-bottom: 0;
+}
+.resume-area .resume-content .resume-timeline .item:hover::before {
+    background: #14C5FD;
+}
+.resume-area .resume-content .resume-timeline .item:hover .date {
+    color: #14C5FD;
+}
+/* project */
+.project-area {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    height: 100vh;
+    margin-left: 440px;
+}
+
+.project-items .project-item .project-item-inner {
+    height: 370px;
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.project-items .project-item .project-item-inner img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-items .project-item h3 {
+    font-size: 24px;
+    font-weight: 300;
+    margin: 0;
+}
+.project-items .project-item h3 a {
+    color: #fff;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: .3s;
+}
+.project-items .project-item:hover h3 a {
+    border-color: #ffffff;
+}
+/*contact*/
+.contact{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    height: 100vh;
+    margin-left: 440px;
+}
+.contact h3 {
+    color: #fff;
+    font-weight: 300;
+}
+
+ .social-contact{
+    gap: 8px;
+    margin-top: 50px;
+    display: flex;
+    list-style-type:  none;
+}
+
+.social-contact li a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    line-height: 42px;
+    text-align: center;
+    border: 2px solid #565656;
+    border-radius: 50%;
+
+}
+.social-contact li a:hover {
+    color: #14C5FD;
+    border-color: #14C5FD;
+}
+.social-contact li a svg{
+    height: 24px;
+    width: 24px;
+    background-color: #565656;
+}
+.social-contact li a:hover svg{
+    fill: none;
+    stroke: #14C5FD;
+}
+@media (max-width: 1555px) {
+    #navbar {
+        max-width: 350px;
+        padding: 30px;
+    }
+}
+@media (max-width: 1220px) {
+    #navbar {
+        position: relative;
+        max-width: 767px;
+        left: 0;
+        margin: auto;
+        top: 0;
+        transform: translateY(0);
+        margin-top: 20px;
+
+    }
+    .hero-section, .about-area, .contact {
+        margin: 10px;
+        max-height: 500px;
+    }
+    .resume-area, .project-area{
+        margin: 10px;
+
+    }
+}
+@media (max-width: 900px) {
+    .section-header h1 {
+        font-size: 58px;
+    }
+}
